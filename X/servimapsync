@@ -76,8 +76,6 @@ sub output_file
                 $output .= $string ;
                 # body can not be sent by send_status() because then it
                 # sets Content-type to text/html
-                
-                $self->send_status( '200', 'OK' ) ;
                 print $output ;
         }
         else
